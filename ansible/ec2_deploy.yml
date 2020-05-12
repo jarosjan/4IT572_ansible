@@ -38,7 +38,8 @@
         state: present
         update_cache: yes
       become: yes
-    - service: docker
+    - service:
+        name: docker
         state: started
         enabled: yes
       become: yes
